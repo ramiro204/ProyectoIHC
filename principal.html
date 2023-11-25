@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+      body {
+          background-color:  rgba(183, 240, 235, 0.958); /* Puedes cambiar el valor hexadecimal a tu color deseado */
+          margin: 0; /* Elimina los márgenes predeterminados del body */
+          padding: 0; /* Elimina el relleno predeterminado del body */
+      }
+  </style>
+    <title>Principal
+    </title>
+  </head>
+  <body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Ofertas de trabajo</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Publicar oferta</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Mi perfil</button>
+      </li>
+    
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+        <div class="input-group">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Que tipo de trabajo esta buscando?">
+          <button type="button" class="btn btn-outline-secondary">Buscar</button>
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Ordenar por distancia</a></li>
+            <li><a class="dropdown-item" href="#">Ordenar por fecha de publicación</a></li>
+            <li><a class="dropdown-item" href="#">Ordenar por recomendación</a></li>
+          
+          </ul>
+        </div>
+
+
+      </div>
+       
+
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Coloque un titulo para su publicación.</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Titulo ">
+        </div>
+        <select class="form-select form-select-sm" aria-label="Small select example">
+          <option selected>Selecionar un distrito.</option>
+          <option value="1">Comas</option>
+          <option value="2">Los Olivos</option>
+          <option value="3">Independencia</option>
+        </select>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Haga una descripcion breve del puesto.</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+      
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Publicar oferta
+</button>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Felicidades!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Su oferta fue publicada con exito, ya es visible para los demas usuarios.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+    </div>
+  </body>
+</html>
